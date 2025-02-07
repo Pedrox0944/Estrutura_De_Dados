@@ -112,6 +112,10 @@ int delete(simple_list *list, int pos)
         list->size_list--;
         return trash->value;
     }
+    else {
+        puts("List empty");
+        return -1;
+    }
 }
 
 void print(simple_list *list)
