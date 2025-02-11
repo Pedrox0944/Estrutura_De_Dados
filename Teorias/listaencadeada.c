@@ -35,15 +35,11 @@ node *create_node(int value)
 
 void add(simple_list *list, node *node, int pos)
 {
-    if (list == NULL) 
+    if (list == NULL || node == NULL) 
     {
         return;
     }
-    if (node == NULL) 
-    {
-        return;
-    }
-    
+  
     if (list->start == NULL) 
     {
         list->start = node;
